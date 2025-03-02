@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Header Styling */
+.header {
+    background: url('../images/header-background.jpg') center/cover no-repeat;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3.0em;
+    font-weight: bold;
+}
+
+/* Hero Subtitle */
+.hero-subtitle {
+    max-width: 600px;
+    margin: 0 auto 20px; /* Centering & spacing */
+}
+
+.hero-subtitle .role {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.hero-subtitle .description {
+    font-size: 1rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Education & Experience */
+.education-item, .experience-item {
+    margin-bottom: 30px;
+}
+
+.education-item h4, .experience-item h4 {
+    font-weight: bold;
+    color: #900;
+}
+
+/* Social Buttons */
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.social-btn i {
+    font-size: 20px;
+}
+
+.social-btn:hover {
+    opacity: 0.8;
+}
+
+/* Project Buttons */
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
