@@ -5,10 +5,26 @@ body {
 
 /* Header Styling */
 .header {
+    position: relative;
     background: url('../images/header-background.jpg') center/cover no-repeat;
     color: white;
     padding: 60px 20px;
     text-align: center;
+    overflow: hidden; /* ensure overlay doesn't spill */
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* dark transparent layer */
+    z-index: 1;
+}
+
+.header .container,
+.header .text-center {
+    position: relative;
+    z-index: 2;
 }
 
 .header h1 {
