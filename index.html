@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roshan Shrestha | Portfolio</title>
+    <title>Roshan Shrestha | .NET &amp; Backend Developer</title>
+    <meta name="description" content="Roshan Shrestha's .NET and backend portfolio: C#, ASP.NET Core, REST APIs, EF Core, SQL Server, and AWS infrastructure projects.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="icons/favicon.png">
@@ -26,15 +27,15 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Roshan Shrestha</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -46,63 +47,127 @@
         <div class="text-center">
             <h1>Roshan Shrestha</h1>
             <div class="hero-subtitle">
+                <p class="role">.NET &amp; Backend Developer</p>
                 <p class="description">
-                    Mobile Developer skilled in building cross-platform apps with React Native, Kotlin, Swift & TypeScript. Passionate about creating scalable and high-performance mobile solutions.
-                    
+                    I build backend applications with C#, ASP.NET, and SQL Server.
+                    My projects cover API integration, database access, and cloud infrastructure,
+                    with ShoesStore.CloudBackend as my current .NET focus.
+                    <br><br>
+                    <i class="fas fa-code" aria-hidden="true"></i> C# · ASP.NET Core · REST APIs · EF Core · SQL Server
                     <br>
-                    <br>
-                    <i class="fas fa-briefcase"></i> 3+ years of Software and Web Development experience in .NET, C#, and SQL Server
-                    <br>
-                    <i class="fas fa-code"></i> Proficient in Kotlin, Swift, TypeScript, and Full-Stack Development
-                    <br>&nbsp;</br>
-                    <i class="fas fa-map-marker-alt"></i> North York, Toronto, Canada
+                    <i class="fas fa-cloud" aria-hidden="true"></i> AWS · Terraform · Docker · GitHub Actions
+                    <br><br>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i> North York, Toronto, Canada
                 </p>
             </div>
-            <div class="d-flex justify-content-center gap-3 mt-3">
-                <a href="https://linkedin.com/in/roshan-shrestha-743015361/" class="btn btn-primary social-btn" target="_blank">
+            <div class="d-flex justify-content-center flex-wrap gap-3 mt-3">
+                <a href="#shoesstore" class="btn btn-danger social-btn">Explore my .NET project</a>
+                <a href="https://linkedin.com/in/roshan-shrestha-743015361/" class="btn btn-primary social-btn" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-linkedin"></i> LinkedIn
                 </a>
-                <a href="https://github.com/roshanstha1996" class="btn btn-dark social-btn" target="_blank">
+                <a href="https://github.com/roshanstha1996" class="btn btn-dark social-btn" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-github"></i> GitHub
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Education Section -->
-    <section id="education" class="container my-5">
-        <div class="row">
-            <div class="col-md-6">
-                <h1 class="text-danger text-start">Education</h1>
+    <!-- Selected Projects -->
+    <main>
+    <section id="projects" class="container my-5" aria-labelledby="projects-heading">
+        <h2 id="projects-heading" class="text-danger">Selected Backend &amp; Cloud Projects</h2>
+        <p>Explore the source code behind my .NET applications, database work, and cloud infrastructure.</p>
+
+        <article id="shoesstore" class="card border-danger mb-4">
+            <div class="card-body p-4">
+                <p class="text-danger fw-bold mb-2">Featured .NET project · In progress</p>
+                <h3 class="text-break">ShoesStore.CloudBackend</h3>
+                <p class="fw-bold">C# · .NET 10 · ASP.NET Core · Swagger · EF Core · SQL Server</p>
+                <p>A shoe-store backend foundation organized into API, Application, Domain, and Infrastructure projects.
+                    The current source establishes the web application setup and database model.</p>
+                <ul>
+                    <li>Configured Swagger and Swagger UI for the development environment.</li>
+                    <li>Registered an EF Core database context with the SQL Server provider through dependency injection.</li>
+                    <li>Modeled products, categories, users, orders, and order items, with required fields, length limits, and decimal precision configured in the database context.</li>
+                </ul>
+                <a href="https://github.com/roshanstha1996/ShoesStore.CloudBackend" class="btn btn-danger" target="_blank" rel="noopener noreferrer">View ShoesStore source on GitHub</a>
             </div>
-            <div class="col-md-6">                
-                <div class="education-item">
-                    <h4>2024 - 2025</h4>
-                    <h5>Mobile Application Development and Strategy Program</h5>
-                    <p>George Brown College</p>
-                    <ul>
-                        <li>Build a shopping app apps in React Native, Kotlin, and Swift.</li>
-                        <li>Completed an e-commerce project using TypeScript, JWT auth, and MongoDB.</li>
-                        <li>Worked on mobile apps for event discovery, rental listings, and ordering systems.</li>
-                    </ul>
-                </div>
-                <div class="education-item">
-                    <h4>2018 - 2019</h4>
-                    <h5>BSc (Hons) Computing</h5>
-                    <p>The British College, Nepal</p>
-                    <ul>
-                        <li>Focused on software engineering, databases, and full-stack development.</li>
-                    </ul>
-                </div>
+        </article>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <article class="card h-100">
+                    <div class="card-body">
+                        <h3 class="h4">Kwangju Virtual Account API</h3>
+                        <p class="fw-bold">C# · ASP.NET Core · Dapper · SQL Server · Swagger</p>
+                        <p>Banking integration code with partner registration and account-holder inquiry routes,
+                            OAuth token requests, signed HTTP requests, and Dapper-based stored procedure access.</p>
+                        <a href="https://github.com/roshanstha1996/Kwangju-Virtual-AC-API" class="btn btn-outline-danger" target="_blank" rel="noopener noreferrer">View Kwangju API source</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="card h-100">
+                    <div class="card-body">
+                        <h3 class="h4">ASP.NET Web API &amp; Dependency Injection</h3>
+                        <p class="fw-bold">C# · ASP.NET MVC / Web API · Entity Framework · Unity</p>
+                        <p>Product API with create, read, update, and delete operations, repository interfaces,
+                            Unity dependency injection, an Entity Framework data layer, and an MVC web application.</p>
+                        <a href="https://github.com/roshanstha1996/ASP.NET-WebAPI-DI" class="btn btn-outline-danger" target="_blank" rel="noopener noreferrer">View ASP.NET Web API source</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="card h-100">
+                    <div class="card-body">
+                        <h3 class="h4">AWS Infrastructure with Terraform</h3>
+                        <p class="fw-bold">AWS · Terraform · EC2 · ALB · Auto Scaling · S3</p>
+                        <p>A team coursework project with Terraform definitions for public and private subnets,
+                            an Application Load Balancer, EC2 Auto Scaling with CloudWatch alarms,
+                            and versioned, encrypted S3 web-content storage.</p>
+                        <a href="https://github.com/roshanstha1996/ACS730_PROJECT2" class="btn btn-outline-danger" target="_blank" rel="noopener noreferrer">View AWS / Terraform source</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="card h-100">
+                    <div class="card-body">
+                        <h3 class="h4">Containerized Employee Application</h3>
+                        <p class="fw-bold">Python / Flask · MySQL · Docker · GitHub Actions · Amazon ECR</p>
+                        <p>A coursework application for adding and looking up employee records, with separate
+                            Flask and MySQL Docker images and a GitHub Actions workflow configured to build
+                            and push both images to Amazon ECR.</p>
+                        <a href="https://github.com/roshanstha1996/CLO835-Assignment1" class="btn btn-outline-danger" target="_blank" rel="noopener noreferrer">View Docker / ECR source</a>
+                    </div>
+                </article>
             </div>
         </div>
+
+        <div class="mt-5">
+            <h3 class="h4">Earlier Mobile &amp; Application Projects</h3>
+            <p>Additional work across ordering, rental listings, cryptocurrency, and parking applications.</p>
+            <div class="project-buttons">
+                <a href="https://github.com/roshanstha1996/PIZZA_ORDER" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">Pizza Order</a>
+                <a href="https://github.com/roshanstha1996/PROPERTY_APP_RENTAL" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">Property Rental</a>
+                <a href="https://github.com/roshanstha1996/CryptoApp" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">Crypto App</a>
+                <a href="https://github.com/roshanstha1996/Parking" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">Parking Simulator</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container my-5" aria-labelledby="about-heading">
+        <h2 id="about-heading" class="text-danger">About</h2>
+        <p>I'm Roshan, a software developer based in Toronto, focused on .NET backend development.
+            My selected repositories show work with C# APIs, Entity Framework and Dapper data access,
+            SQL Server integration, and AWS infrastructure defined in Terraform.
+            I also bring a mobile application development background to my backend work.</p>
     </section>
 
     <!--Experience -->
     <section id="experience" class="container my-5">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="text-danger text-start">Work Experience</h1>
+                <h2 class="text-danger text-start">Work Experience</h2>
             </div>
             <div class="col-md-6">
                 <div class="experience-item">
@@ -110,9 +175,8 @@
                     <h5>Software Developer</h5>
                     <p>Inficare Pvt. Ltd., Nepal</p>
                     <ul>
-                        <li>Developed scalable RESTful APIs using .NET MVC, SQL Server, and repository pattern.</li>
+                        <li>Developed RESTful APIs using .NET MVC, SQL Server, and repository pattern.</li>
                         <li>Refactored legacy systems and built dynamic admin panel features.</li>
-                        <li>Secured backend systems with encryption and access control protocols.</li>
                         <li>Collaborated with mobile teams to integrate backend with Android/iOS apps.</li>
                     </ul>
                 </div>
@@ -130,16 +194,35 @@
         </div>
     </section>
 
-    <!-- Recent Projects -->
-    <section id="projects" class="container text-center my-5">
-        <h2 class="text-danger">Recent Projects</h2>
-        <div class="project-buttons">
-            <a href="https://github.com/roshanstha1996/PIZZA_ORDER" class="btn btn-danger" target="_blank">Pizza Order</a>
-            <a href="https://github.com/roshanstha1996/PROPERTY_APP_RENTAL" class="btn btn-danger" target="_blank">Property Rental</a>
-            <a href="https://github.com/roshanstha1996/CryptoApp" class="btn btn-danger" target="_blank">Crypto App</a>
-            <a href="https://github.com/roshanstha1996/Parking" class="btn btn-danger" target="_blank">Parking Simulator</a>
+    <!-- Education Section -->
+    <section id="education" class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-danger text-start">Education</h2>
+            </div>
+            <div class="col-md-6">                
+                <div class="education-item">
+                    <h4>2024 - 2025</h4>
+                    <h5>Mobile Application Development and Strategy Program</h5>
+                    <p>George Brown College</p>
+                    <ul>
+                        <li>Built shopping apps in React Native, Kotlin, and Swift.</li>
+                        <li>Worked on mobile apps for event discovery, rental listings, and ordering systems.</li>
+                    </ul>
+                </div>
+                <div class="education-item">
+                    <h4>2018 - 2019</h4>
+                    <h5>BSc (Hons) Computing</h5>
+                    <p>The British College, Nepal</p>
+                    <ul>
+                        <li>Focused on software engineering, databases, and full-stack development.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
+
+    </main>
 
     <!-- Footer -->
     <footer class="footer bg-light text-center py-2">
@@ -147,10 +230,14 @@
             <div class="row">
                 <div><p>
                     <i class="fas fa-phone"></i> 647-620-3368 | <i class="fas fa-envelope"></i> roshanstha1996@gmail.com</p></div>
-                <div><p>© 2025 by Roshan Shrestha</p></div>
+                <div><p>© <span id="copyright-year">2026</span> by Roshan Shrestha</p></div>
             </div>
         </section>
     </footer>
+
+    <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
